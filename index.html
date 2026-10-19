@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Морок и бал — 31 октября, ЧИНЫ</title>
+<meta name="description" content="Маскарадный бал в ЧИНЫ 31 октября 2026, 20:00. Музыка: EDM. 9-я линия Васильевского острова, 54.">
+<meta property="og:title" content="Морок и бал — 31.10.26, ЧИНЫ">
+<meta property="og:description" content="Маскарадный бал. EDM. 20:00. 9-я линия В.О., 54.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&family=Alice&display=swap" rel="stylesheet">
+<style>
+/* ============ ЦВЕТА И ШРИФТЫ — меняются здесь ============ */
+:root{
+  --bg:#56282b;        /* фон страницы */
+  --bg-deep:#42191c;   /* тёмные блоки */
+  --sand:#d2a679;      /* основной бежевый */
+  --red:#b8262b;       /* красный акцент */
+  --ink:#2e1013;       /* текст на светлом */
+  --display:"Ruslan Display","Palatino Linotype",Georgia,serif;
+  --text:"Alice",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--sand);font-family:var(--text);font-size:1.0625rem;line-height:1.65;-webkit-text-size-adjust:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sand);outline-offset:3px}
+.wrap{width:min(100% - 2.5rem,62rem);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05}
+h2{font-size:clamp(1.9rem,6vw,3rem);margin-bottom:1.25rem}
+
+/* ---------- Первый экран ---------- */
+.hero{padding:2rem 0 0;text-align:center;overflow:hidden}
+.hero .wrap{width:min(100% - 2.5rem,76rem)}
+.title{font-size:clamp(3.4rem,17vw,5.5rem);line-height:1;letter-spacing:.01em;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.1em .3em}
+.title .and{position:relative;display:inline-block;padding:0 .12em}
+.title .and::before,.title .and::after{content:"";position:absolute;left:50%;width:.14em;height:.14em;background:var(--red);transform:translateX(-50%) rotate(45deg)}
+.title .and::before{top:-.1em}.title .and::after{bottom:-.02em}
+.stage{display:grid;grid-template-columns:1fr;justify-items:center;gap:1rem;margin-top:1.5rem}
+.facts{font-family:var(--display);font-size:clamp(1.6rem,6vw,2.2rem);line-height:1.3;text-align:center}
+.hero .cta{margin-top:1.25rem}
+.mask{display:block;width:min(88%,28rem);height:auto;margin:0 auto;
+  -webkit-mask-image:linear-gradient(to bottom,#000 82%,transparent 100%);
+          mask-image:linear-gradient(to bottom,#000 82%,transparent 100%)}
+@media(min-width:760px){
+  .title{flex-wrap:nowrap;font-size:clamp(4rem,10.5vw,9rem);gap:0 .35em}
+  .stage{grid-template-columns:1fr minmax(0,28rem) 1fr;gap:2rem;align-items:center;justify-items:stretch}
+  .facts{font-size:clamp(1.8rem,3vw,2.8rem);text-align:left}
+  .mask{width:100%;max-height:68vh;object-fit:contain}
+}
+.cta{display:inline-block;margin:.25rem 0 2.75rem;background:var(--red);color:#f6e6cf;font-family:var(--display);font-size:1.4rem;padding:.8rem 2.2rem;text-decoration:none;border:2px solid var(--sand);transition:background .2s,color .2s}
+.cta:hover{background:var(--sand);color:var(--ink)}
+
+/* ---------- Секции ---------- */
+section.block{padding:3.5rem 0;border-top:1px solid rgba(210,166,121,.35)}
+.block p{max-width:40rem;margin-bottom:1rem}
+.cols{display:grid;gap:2rem}
+@media(min-width:760px){.cols{grid-template-columns:1fr 1fr;gap:3rem}}
+
+.lineup{list-style:none;display:grid;gap:1.25rem;margin-top:1rem}
+.lineup li{border-left:4px solid var(--red);padding-left:1rem}
+.lineup strong{display:block;font-family:var(--display);font-weight:400;font-size:1.6rem;line-height:1.2}
+.lineup span{opacity:.85}
+
+.rules{list-style:none;display:flex;flex-direction:column;gap:.3rem;margin-top:1rem}
+.rules li{line-height:1.5}
+.cols .rules{margin-top:0}
+.cols p:last-child{margin-bottom:0}
+.rules li{padding-left:1.6rem;position:relative}
+.rules li::before{content:"";position:absolute;left:0;top:.65em;width:.55rem;height:.55rem;background:var(--red);transform:rotate(45deg)}
+
+/* ---------- Билеты ---------- */
+.tickets{background:var(--bg-deep)}
+.pay{display:grid;gap:2rem;align-items:center}
+@media(min-width:760px){.pay{grid-template-columns:1fr auto;gap:3rem}}
+.price{font-family:var(--display);font-size:clamp(2.2rem,8vw,3.4rem);margin-bottom:.5rem}
+.qrbox{background:#f6ecd9;padding:1rem;width:fit-content;border:2px solid var(--sand);text-align:center;color:var(--ink)}
+.qrbox #qr img,.qrbox #qr canvas,.qrbox>img{display:block;margin:0 auto;width:min(220px,60vw);height:auto;aspect-ratio:1}
+.qrbox small{display:block;margin-top:.6rem;font-size:.9rem;line-height:1.3}
+.note{font-size:.95rem;opacity:.8;margin-top:1rem}
+
+.where{display:grid;gap:2rem}
+@media(min-width:760px){.where{grid-template-columns:1fr 1.3fr;gap:3rem;align-items:start}}
+.where h2{margin-bottom:.5rem}
+.where .when{margin-top:1.75rem}
+.map{display:block;width:100%;height:340px;border:2px solid var(--sand);background:var(--bg-deep)}
+footer{padding:2rem 0 3rem;text-align:center;font-size:.95rem;opacity:.8;border-top:1px solid rgba(210,166,121,.35)}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ======================= 1. ПЕРВЫЙ ЭКРАН ======================= -->
+<header class="hero">
+  <div class="wrap">
+    <h1 class="title"><span>Морок</span><span class="and">и</span><span>бал</span></h1>
+    <div class="stage">
+      <!-- ДАТА И ВРЕМЯ: меняйте текст здесь -->
+      <div class="facts">
+        <p>ДАТА: 31.10.26</p>
+        <p>ВРЕМЯ: 20:00</p>
+      </div>
+      <img class="mask" src="mask.webp" width="847" height="1200" alt="Венецианская маска с короной и красными лентами">
+    </div>
+    <a class="cta" href="#tickets">Купить билет</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= 2. О МЕРОПРИЯТИИ ======================= -->
+<section class="block" id="about">
+  <div class="wrap">
+    <h2>О вечере</h2>
+    <div class="cols">
+      <div>
+        <!-- РЕДАКТИРУЙТЕ ТЕКСТ НИЖЕ -->
+        <p>«Морок и бал» — маскарадная ночь накануне Хэллоуина. Тридцать первого октября ЧИНЫ превращаются в зал старинного бала, где вместо оркестра — электронная музыка, а вместо лиц — маски.</p>
+        <p>Приходите в образе: венецианская маска, корона, лента, тёмный бархат. Всё, что скроет лицо и добавит тайны, подойдёт.</p>
+      </div>
+      <ul class="rules">
+        <li>Бал-маскарад с танцами до утра под EDM.</li>
+        <li>Образ приветствуется.</li>
+        <li>Лучшие образы вечера получат призы.</li>
+        <li>Старт в 20:00, вход по билетам.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 3. КТО ИГРАЕТ ======================= -->
+<section class="block" id="lineup">
+  <div class="wrap">
+    <h2>Кто играет</h2>
+    <!-- Чтобы добавить артиста — скопируйте целиком блок <li>…</li> -->
+    <ul class="lineup">
+      <li><strong>DJ Left2Right</strong><span>tech-house</span></li>
+      <li><strong>DJ DAIKIRI</strong><span>indie / melodic / EDM</span></li>
+      <li><strong>DJ UMR</strong><span>bass house</span></li>
+      <li><strong>DJ POMOR</strong><span>house / techno</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================= 4. БИЛЕТЫ И ОПЛАТА ======================= -->
+<section class="block tickets" id="tickets">
+  <div class="wrap pay">
+    <div>
+      <h2>Билеты</h2>
+      <p class="price" id="price">750 ₽</p>
+      <p id="priceNote">Цена за один вход. Количество мест ограничено.</p>
+      <p><a class="cta" id="payLink" href="#">Оплатить онлайн</a></p>
+      <p class="note">Или наведите камеру телефона на QR-код — откроется страница оплаты. После оплаты сохраните подтверждение и покажите его на входе.</p>
+    </div>
+    <div class="qrbox">
+      <div id="qr" role="img" aria-label="QR-код для оплаты"></div>
+      <small>QR-код для оплаты</small>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 5. ГДЕ И КОГДА ======================= -->
+<section class="block" id="place">
+  <div class="wrap where">
+    <div>
+      <h2>Где</h2>
+      <p>ЧИНЫ<br>9-я линия Васильевского острова, 54</p>
+      <p><a id="mapLink" href="#">Открыть в Яндекс Картах</a></p>
+
+      <h2 class="when">КОГДА</h2>
+      <p>31 октября 2026<br>начало в 20:00</p>
+    </div>
+    <!-- КАРТА. Если метка стоит неточно: Яндекс Карты → найти адрес → «Поделиться» → «Виджет» → скопируйте src из кода -->
+    <iframe class="map" title="Карта: ЧИНЫ, 9-я линия Васильевского острова, 54" loading="lazy"
+      src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%209-%D1%8F%20%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F%20%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2%D0%B0%2C%2054&z=16"></iframe>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <!-- КОНТАКТЫ -->
+    Вопросы и бронь столов:<br>
+    Instagram <a id="instaLink" href="#">@chin.resto</a> · Telegram <a id="tgLink" href="#">@morokibal</a>
+  </div>
+</footer>
+
+<!-- Генератор QR-кода (подключается из интернета, нужен только для автоматического QR) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* =====================================================================
+   НАСТРОЙКИ — меняйте только то, что внутри кавычек
+   ===================================================================== */
+var CONFIG = {
+  // Ссылка на оплату (из ЮKassa, Тинькофф, CloudPayments, Tilda, билетного сервиса и т. п.)
+  payUrl: "https://qr.nspk.ru/AS10003PQTEDCL9S9B5Q432RU29RFISJ",
+
+  // Свой QR-код картинкой (например, из банка). Если указать файл, например "qr.png",
+  // он будет показан вместо автоматического QR. Оставьте "" — QR создастся сам из payUrl.
+  qrImage: "qr.svg",
+
+  // Ссылка на карту
+  mapUrl: "https://yandex.ru/maps/?text=" + encodeURIComponent("Санкт-Петербург, 9-я линия Васильевского острова, 54"),
+
+  // Контакты организатора
+  instagramUrl: "https://instagram.com/chin.resto",
+  telegramUrl: "https://t.me/morokibal"
+};
+
+/* ---- Дальше менять не нужно ---- */
+document.getElementById("payLink").href = CONFIG.payUrl;
+document.getElementById("mapLink").href = CONFIG.mapUrl;
+document.getElementById("instaLink").href = CONFIG.instagramUrl;
+document.getElementById("tgLink").href = CONFIG.telegramUrl;
+
+(function(){
+  var box = document.getElementById("qr");
+  if (CONFIG.qrImage) {
+    box.innerHTML = '<img src="' + CONFIG.qrImage + '" alt="QR-код для оплаты">';
+    return;
+  }
+  try {
+    new QRCode(box, { text: CONFIG.payUrl, width: 200, height: 200,
+      colorDark: "#2e1013", colorLight: "#ead6b8", correctLevel: QRCode.CorrectLevel.M });
+  } catch (e) {
+    box.textContent = "QR-код не загрузился. Нажмите «Оплатить онлайн».";
+  }
+})();
+</script>
+</body>
+</html>
