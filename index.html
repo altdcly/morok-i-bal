@@ -23,44 +23,44 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--sand);font-family:var(--text);font-size:1.0625rem;line-height:1.65;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--sand);font-family:var(--text);font-size:1.0625rem;line-height:1.55;-webkit-text-size-adjust:100%}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--sand);outline-offset:3px}
 .wrap{width:min(100% - 2.5rem,62rem);margin-inline:auto}
 h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05}
-h2{font-size:clamp(1.9rem,6vw,3rem);margin-bottom:1.25rem}
+h2{font-size:clamp(1.9rem,6vw,3rem);margin-bottom:.6rem}
 
 /* ---------- Первый экран ---------- */
-.hero{padding:2rem 0 0;text-align:center;overflow:hidden}
+.hero{padding:1.25rem 0 0;text-align:center;overflow:hidden}
 .hero .wrap{width:min(100% - 2.5rem,76rem)}
 .title{font-size:clamp(3.4rem,17vw,5.5rem);line-height:1;letter-spacing:.01em;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.1em .3em}
 .title .and{position:relative;display:inline-block;padding:0 .12em}
 .title .and::before,.title .and::after{content:"";position:absolute;left:50%;width:.14em;height:.14em;background:var(--red);transform:translateX(-50%) rotate(45deg)}
 .title .and::before{top:-.1em}.title .and::after{bottom:-.02em}
-.stage{display:grid;grid-template-columns:1fr;justify-items:center;gap:1rem;margin-top:1.5rem}
+.stage{display:grid;grid-template-columns:1fr;justify-items:center;gap:.75rem;margin-top:.75rem}
 .facts{font-family:var(--display);font-size:clamp(1.6rem,6vw,2.2rem);line-height:1.3;text-align:center}
-.hero .cta{margin-top:1.25rem}
+.hero .cta{margin-top:.5rem}
 .mask{display:block;width:min(88%,28rem);height:auto;margin:0 auto;
   -webkit-mask-image:linear-gradient(to bottom,#000 82%,transparent 100%);
           mask-image:linear-gradient(to bottom,#000 82%,transparent 100%)}
 @media(min-width:760px){
   .title{flex-wrap:nowrap;font-size:clamp(4rem,10.5vw,9rem);gap:0 .35em}
-  .stage{grid-template-columns:1fr minmax(0,28rem) 1fr;gap:2rem;align-items:center;justify-items:stretch}
+  .stage{grid-template-columns:1fr minmax(0,28rem) 1fr;gap:1.5rem;align-items:center;justify-items:stretch}
   .facts{font-size:clamp(1.8rem,3vw,2.8rem);text-align:left}
-  .mask{width:100%;max-height:68vh;object-fit:contain}
+  .mask{width:100%;max-height:56vh;object-fit:contain}
 }
-.cta{display:inline-block;margin:.25rem 0 2.75rem;background:var(--red);color:#f6e6cf;font-family:var(--display);font-size:1.4rem;padding:.8rem 2.2rem;text-decoration:none;border:2px solid var(--sand);transition:background .2s,color .2s}
+.cta{display:inline-block;margin:.25rem 0 1.75rem;background:var(--red);color:#f6e6cf;font-family:var(--display);font-size:1.4rem;padding:.8rem 2.2rem;text-decoration:none;border:2px solid var(--sand);transition:background .2s,color .2s}
 .cta:hover{background:var(--sand);color:var(--ink)}
 
 /* ---------- Секции ---------- */
-section.block{padding:3.5rem 0;border-top:1px solid rgba(210,166,121,.35)}
-.block p{max-width:40rem;margin-bottom:1rem}
-.cols{display:grid;gap:2rem}
-@media(min-width:760px){.cols{grid-template-columns:1fr 1fr;gap:3rem}}
+section.block{padding:2rem 0;border-top:1px solid rgba(210,166,121,.35)}
+.block p{max-width:40rem;margin-bottom:.7rem}
+.cols{display:grid;gap:.5rem}
+@media(min-width:760px){.cols{grid-template-columns:1fr 1fr;gap:2.5rem}}
 
-.lineup{list-style:none;display:grid;gap:1.25rem;margin-top:1rem}
+.lineup{list-style:none;display:grid;gap:.6rem;margin-top:.25rem}
 .lineup li{border-left:4px solid var(--red);padding-left:1rem}
-.lineup strong{display:block;font-family:var(--display);font-weight:400;font-size:1.6rem;line-height:1.2}
+.lineup strong{display:block;font-family:var(--display);font-weight:400;font-size:1.4rem;line-height:1.2}
 .lineup span{opacity:.85}
 
 .rules{list-style:none;display:flex;flex-direction:column;gap:.3rem;margin-top:1rem}
@@ -71,21 +71,19 @@ section.block{padding:3.5rem 0;border-top:1px solid rgba(210,166,121,.35)}
 .rules li::before{content:"";position:absolute;left:0;top:.65em;width:.55rem;height:.55rem;background:var(--red);transform:rotate(45deg)}
 
 /* ---------- Билеты ---------- */
-.tickets{background:var(--bg-deep)}
-.pay{display:grid;gap:2rem;align-items:center}
-@media(min-width:760px){.pay{grid-template-columns:1fr auto;gap:3rem}}
+.duo{display:grid;gap:1.25rem}
+@media(min-width:760px){.duo{grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}}
+.tickets{background:var(--bg-deep);padding:1.25rem 1.5rem;border:1px solid rgba(210,166,121,.35)}
 .price{font-family:var(--display);font-size:clamp(2.2rem,8vw,3.4rem);margin-bottom:.5rem}
-.qrbox{background:#f6ecd9;padding:1rem;width:fit-content;border:2px solid var(--sand);text-align:center;color:var(--ink)}
-.qrbox #qr img,.qrbox #qr canvas,.qrbox>img{display:block;margin:0 auto;width:min(220px,60vw);height:auto;aspect-ratio:1}
-.qrbox small{display:block;margin-top:.6rem;font-size:.9rem;line-height:1.3}
-.note{font-size:.95rem;opacity:.8;margin-top:1rem}
+.note{font-size:.95rem;opacity:.8;margin-top:.6rem}
+.tickets .cta{margin-bottom:0}
 
-.where{display:grid;gap:2rem}
+.where{display:grid;gap:1.25rem}
 @media(min-width:760px){.where{grid-template-columns:1fr 1.3fr;gap:3rem;align-items:start}}
 .where h2{margin-bottom:.5rem}
-.where .when{margin-top:1.75rem}
-.map{display:block;width:100%;height:340px;border:2px solid var(--sand);background:var(--bg-deep)}
-footer{padding:2rem 0 3rem;text-align:center;font-size:.95rem;opacity:.8;border-top:1px solid rgba(210,166,121,.35)}
+.where .when{margin-top:1rem}
+.map{display:block;width:100%;height:300px;border:2px solid var(--sand);background:var(--bg-deep)}
+footer{padding:1.25rem 0 1.75rem;text-align:center;font-size:.95rem;opacity:.8;border-top:1px solid rgba(210,166,121,.35)}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
@@ -102,9 +100,9 @@ footer{padding:2rem 0 3rem;text-align:center;font-size:.95rem;opacity:.8;border-
         <p>ДАТА: 31.10.26</p>
         <p>ВРЕМЯ: 20:00</p>
       </div>
-      <img class="mask" src="mask.webp" width="847" height="1200" alt="Венецианская  с короной и красными лентами">
+      <img class="mask" src="mask.webp" width="847" height="1200" alt="Венецианская маска с короной и красными лентами">
     </div>
-    <a class="cta" href="#tickets">Купить билет</a>
+    <a class="cta" id="buyLink" href="https://t.me/morok_bal_ticket_bot">Купить билет</a>
   </div>
 </header>
 
@@ -118,7 +116,7 @@ footer{padding:2rem 0 3rem;text-align:center;font-size:.95rem;opacity:.8;border-
       <div>
         <!-- РЕДАКТИРУЙТЕ ТЕКСТ НИЖЕ -->
         <p>«Морок и бал» — маскарадная ночь накануне Хэллоуина. Тридцать первого октября ЧИНЫ превращаются в зал старинного бала, где вместо оркестра — электронная музыка, а вместо лиц — маски.</p>
-        <p>Приходите в образе, который скроет лицо и перенесёт нас в атмосферу мрачной славянской сказки. Вы можете перевоплотиться в мифических персонажей: от болотных кикимор в нарядах цвета тины и мха до леших в мантиях из древесной коры или величественных, но пугающих тёмных царевен. Маски, высокие короны, ниспадающие ленты, вуали, глубокие оттенки бархата и тяжелые ткани — всё, что дышит тайной и древней магией, станет идеальным выбором для этой ночи.</p>
+        <p>Приходите в образе: венецианская маска, корона, лента, тёмный бархат. Всё, что скроет лицо и добавит тайны, подойдёт.</p>
       </div>
       <ul class="rules">
         <li>Бал-маскарад с танцами до утра под EDM.</li>
@@ -130,33 +128,26 @@ footer{padding:2rem 0 3rem;text-align:center;font-size:.95rem;opacity:.8;border-
   </div>
 </section>
 
-<!-- ======================= 3. КТО ИГРАЕТ ======================= -->
+<!-- ======================= 3–4. КТО ИГРАЕТ + БИЛЕТЫ (на ПК рядом, на телефоне друг под другом) ======================= -->
 <section class="block" id="lineup">
-  <div class="wrap">
-    <h2>Кто играет</h2>
-    <!-- Чтобы добавить артиста — скопируйте целиком блок <li>…</li> -->
-    <ul class="lineup">
-      <li><strong>DJ Left2Right</strong><span>tech-house</span></li>
-      <li><strong>DJ DAIKIRI</strong><span>indie / melodic / EDM</span></li>
-      <li><strong>DJ UMR</strong><span>bass house</span></li>
-      <li><strong>DJ POMOR</strong><span>house / techno</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ======================= 4. БИЛЕТЫ И ОПЛАТА ======================= -->
-<section class="block tickets" id="tickets">
-  <div class="wrap pay">
+  <div class="wrap duo">
     <div>
+      <h2>Кто играет</h2>
+      <!-- Чтобы добавить артиста — скопируйте целиком блок <li>…</li> -->
+      <ul class="lineup">
+        <li><strong>DJ Left2Right</strong><span>tech-house</span></li>
+        <li><strong>DJ DAIKIRI</strong><span>indie / melodic / EDM</span></li>
+        <li><strong>DJ UMR</strong><span>bass house</span></li>
+        <li><strong>DJ POMOR</strong><span>house / techno</span></li>
+      </ul>
+    </div>
+
+    <div class="tickets" id="tickets">
       <h2>Билеты</h2>
       <p class="price" id="price">750 ₽</p>
       <p id="priceNote">Цена за один вход. Количество мест ограничено.</p>
-      <p><a class="cta" id="payLink" href="#">Оплатить онлайн</a></p>
-      <p class="note">Или наведите камеру телефона на QR-код — откроется страница оплаты. После оплаты сохраните подтверждение и покажите его на входе.</p>
-    </div>
-    <div class="qrbox">
-      <div id="qr" role="img" aria-label="QR-код для оплаты"></div>
-      <small>QR-код для оплаты</small>
+      <p><a class="cta" id="payLink" href="https://t.me/morok_bal_ticket_bot">Купить билет</a></p>
+      <p class="note">Билеты оформляются в Telegram-боте.</p>
     </div>
   </div>
 </section>
@@ -188,19 +179,13 @@ footer{padding:2rem 0 3rem;text-align:center;font-size:.95rem;opacity:.8;border-
   </div>
 </footer>
 
-<!-- Генератор QR-кода (подключается из интернета, нужен только для автоматического QR) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
 /* =====================================================================
    НАСТРОЙКИ — меняйте только то, что внутри кавычек
    ===================================================================== */
 var CONFIG = {
-  // Ссылка на оплату (из ЮKassa, Тинькофф, CloudPayments, Tilda, билетного сервиса и т. п.)
-  payUrl: "https://t.me/morok_bal_ticket_bot",
-
-  // Свой QR-код картинкой (например, из банка). Если указать файл, например "qr.png",
-  // он будет показан вместо автоматического QR. Оставьте "" — QR создастся сам из payUrl.
-  qrImage: "qr.svg",
+  // Куда ведут обе кнопки «Купить билет» (Telegram-бот)
+  buyUrl: "https://t.me/morok_bal_ticket_bot",
 
   // Ссылка на карту
   mapUrl: "https://yandex.ru/maps/?text=" + encodeURIComponent("Санкт-Петербург, 9-я линия Васильевского острова, 54"),
@@ -211,24 +196,11 @@ var CONFIG = {
 };
 
 /* ---- Дальше менять не нужно ---- */
-document.getElementById("payLink").href = CONFIG.payUrl;
+document.getElementById("buyLink").href = CONFIG.buyUrl;
+document.getElementById("payLink").href = CONFIG.buyUrl;
 document.getElementById("mapLink").href = CONFIG.mapUrl;
 document.getElementById("instaLink").href = CONFIG.instagramUrl;
 document.getElementById("tgLink").href = CONFIG.telegramUrl;
-
-(function(){
-  var box = document.getElementById("qr");
-  if (CONFIG.qrImage) {
-    box.innerHTML = '<img src="' + CONFIG.qrImage + '" alt="QR-код для оплаты">';
-    return;
-  }
-  try {
-    new QRCode(box, { text: CONFIG.payUrl, width: 200, height: 200,
-      colorDark: "#2e1013", colorLight: "#ead6b8", correctLevel: QRCode.CorrectLevel.M });
-  } catch (e) {
-    box.textContent = "QR-код не загрузился. Нажмите «Оплатить онлайн».";
-  }
-})();
 </script>
 </body>
 </html>
